@@ -959,6 +959,14 @@ main {
     transition: 0.4s
 }
 
+.divider{
+    display: none;
+}
+
+.divider1{
+    display:none
+}
+
 @media only screen and (max-width: 830px) {
     .footer_main{
         display: flex;
