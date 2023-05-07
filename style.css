@@ -1,0 +1,1007 @@
+/* ====================== Global Variables ================================================ */
+:root {
+    /* --- Colors --- */
+    --yellow: #FFDF6C;
+    --darkYellow: #D1B85E;
+    --green: #6CFFA7;
+    --tgreen: #6cffa768;
+    --darkGreen: #093035;
+    --pink: #FF4264;
+    --darkPink: #C6235E;
+    --white: #FFFFFF;
+    /* Background Colors */
+    --headerBackground: #021315;
+    --background: #061724;
+    --tbackground: #061724d8;
+    --tbackground2: #061724ad;
+    /* Typography */
+    --font1: 'Inria Sans', sans-serif;
+    --font2: 'Inconsolata', monospace;
+}
+
+/* ====================== CSS reset ======================================================= */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+/* ======================= HEADER START =================================================== */
+header {
+    background-color: var(--headerBackground);
+    width: 400px;
+    height: 100vh;
+    padding: 15px 30px;
+    overflow-y:visible;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    
+
+    /* font-family: var(--font1); */
+}
+
+header img {
+    width: 230px;
+    transition: 0.4s
+}
+
+/* header a img :active {
+    color: var(--darkGreen)
+} */
+
+.menu {
+    width: 400px;
+    font-size:x-large;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: var(--yellow);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.menu a:hover {
+    /* color: var(--yellow); */
+    color: var(--darkGreen);
+}
+
+.menu a:active {
+    color: var(--pink);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.footer p {
+    color: var(--green);
+    font-size: x-small;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons i {
+    color: var(--white);
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.social-icons i:hover {
+    color: var(--darkGreen);
+}
+
+.social-icons a:active {
+    color: var(--green);
+}
+
+/* mobile nav Tab */
+
+/* #menuBtn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: var(--headerBackground);
+    background-color: var(--yellow);
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--headerBackground);
+    z-index: 999;
+    display: none;
+} */
+
+/* mobile view
+@media only screen and (max-width:1050px) {
+    header {
+        left: -400px;
+    }
+
+    header .footer {
+        left: -400px;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+
+    /* Header toggle */
+    /* .mobile-nav-active header {
+        left: 0;
+    }
+
+    .mobile-nav-active .footer {
+        left: 0;
+    }
+
+
+} */
+
+/* mobile view */
+@media only screen and (max-width:1050px) {
+    header {
+        display:none;
+    }
+
+    header .footer {
+        display:none;
+    }
+
+
+}
+
+/* ======================= HEADER END =================================================== */
+
+/* ======================= ALL BODY CONTENT START ======================================= */
+/* BODY SET */
+body {
+    background-color: var(--background);
+}
+
+/* ======================= MAIN START =================================================== */
+main {
+    margin-left: 400px;
+    transition: 0.3s;
+    background-color: var(--background);
+    font-family: var(--font2);
+    color: var(--white)
+}
+
+@media only screen and (max-width: 1050px) {
+    main {
+        margin-left: 0;
+        /* margin-right: 0; */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= Home Start =================================================== */
+#home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px;
+    position:relative;
+    /* background-attachment: fixed; */
+}
+
+/* ======================= overlay ====================================================== */
+/* #home::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--background); */
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+} */
+
+#home .home-row {
+    z-index: 1;
+}
+
+#home .home-row h1 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -1;
+    margin-bottom: 10px;
+    line-height: 70px;
+    font-family: var(--font2);
+}
+
+#home .home-row h1 span {
+    color: var(--green);
+}
+
+#home .home-row p {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#home .home-row p span {
+    background-color: var(--tgreen)
+}
+
+/* ------------------------ HOME Mobile view ------------------------*/
+
+@media only screen and (max-width: 670px) {
+    #home {
+        padding: 70px;
+    }
+    #home .miniDivider{
+        height: 10px;
+    }
+    #home .home-row h1 {
+        font-size: 37px;
+        letter-spacing: 0;
+        line-height: 50px;
+    }
+
+    #home .home-row h1 br {
+        display: none;
+    }
+
+    #home .home-row p {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    /* #home .home-row{
+        position:relative
+    } */
+} 
+
+
+
+/* ======================= Home End ===================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DIVIDERs */
+.divider1 {
+    height: 100px;
+    background-color: var(--background);
+    /* border: 2px solid var(--darkPink); */
+}
+.divider{
+    height: 200px;
+    background-color: var(--background);
+    /* border: 2px solid var(--darkPink); */
+}
+
+.miniDivider{
+     height: 50px;
+}
+
+/* Global heading */
+.sub-heading {
+    color: var(--green);
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: var(--font1);
+}
+
+.h2-heading{
+    color: var(--white);
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sub-para{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= About me Start =============================================== */
+#aboutme {
+    padding: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:50px;
+    margin-right: 50px;
+}
+
+#aboutme p {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left:50px;
+    margin-right: 50px;
+     text-align: center; 
+    width: 541px;
+}
+
+#aboutme h3 {
+    font-size: 25px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left:50px;
+    margin-right: 50px;
+    text-align: center;
+    width: 541px;
+}
+
+#aboutme p a{
+   color: var(--yellow);
+   text-decoration: none;
+}
+
+#aboutme button{
+ 
+    font-size: medium;
+    width:100%;
+    height: 40px ;
+    background-color: var(--darkPink);
+    border: 3px solid var(--darkPink);
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color:var(--white);
+    font-family: var(--font1);
+    padding: 0px 70px 0px 70px;
+    cursor: pointer;
+    
+}
+
+/* #aboutme button a{
+    text-decoration: none;
+    font-weight: 600;
+       color:var(--white);
+    font-family: var(--font1);
+} */
+
+#aboutme button:hover{
+    background-color: var(--background);
+    transition: 0.2s;
+    border: 3px solid var(--pink);
+    border-radius: 3px;
+    color: var(--green);
+    font-weight: 600;
+   
+}
+
+/* #aboutme button:hover a{
+    color: var(--green);
+    font-weight: 600;
+} */
+
+
+
+
+@media only screen and (max-width: 830px) {
+    #aboutme {
+        padding: 50px 10px;
+    }
+
+    #aboutme p {
+        font-size: 14px;
+        letter-spacing: 0px;
+        text-align: center;
+        width: 450px;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    #aboutme {
+        padding: 50px 10px;
+    }
+
+    #aboutme p {
+        font-size: 14px;
+        letter-spacing: 0px;
+        text-align: center;
+        width: 270px;
+    }
+    #aboutme h3 {
+        font-size: 15px;
+        letter-spacing: 0px;
+        text-align:center;
+    }
+
+}
+
+/* ======================= About me End ================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= technologies Start =========================================== */
+#technologies {
+    padding: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#technologies .tech-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#technologies .tech-group .h2-heading-tech{
+    color: var(--white);
+    font-size: x-large;
+    margin-bottom: 10px;
+    margin-top:35px
+}
+
+#technologies .tech-group .tech-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:15px;
+    margin-top:10px
+}
+#technologies .tech-group .tech-row .tech-item{
+    position:relative;
+    overflow:hidden;
+    width: 100px;
+    height: 110px;
+}
+
+#technologies .tech-group .tech-row .tech-item .tech-img{
+
+    /* margin: 30px 30px 30px 30px;  */
+    padding: 5px 5px  5px  5px;        
+    /* border: 2px solid var(--yellow); */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100px;
+    height: 110px; */
+    max-height: 95px;
+    width: 90px;
+    
+
+}
+#technologies .tech-group .tech-row .tech-item .tech-img img{
+   width: 100%;
+   height: 100%;
+}
+
+#technologies .tech-group .tech-row .tech-item .tech-info{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    /* background-color: var(--pink); */
+    background-color:var(--tbackground);
+    padding:0 15px;
+     /* border-radius: 10px; */
+     text-align:center;
+     display:flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+     /* transform:scale(0); */
+     visibility:hidden;
+     max-height: 95px;
+    width: 90px;
+    transition: 0.2s;
+}
+
+
+
+#technologies .tech-group .tech-row .tech-item:hover .tech-info{
+    visibility:visible;
+    
+    
+}
+
+/* Movile tech */
+
+@media only screen and (max-width: 830px) {
+    #technologies .tech-group .tech-row{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+        margin-top:30px; */
+        flex-wrap: wrap;
+}}
+
+    
+
+@media only screen and (max-width: 400px) {
+    #technologies .tech-group .tech-row{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap:50px;
+        margin-top:15px */
+        flex-wrap: wrap;
+    }
+   
+}
+
+
+
+
+
+/* ======================= Technologies End ============================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= Portfolio Start ============================================== */
+#portfolio {
+    padding: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .port-row{
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:35px;
+}
+
+#portfolio .port-row .port-item{
+    position:relative;
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+#portfolio .port-row .port-item .port-img{
+    /* margin: 30px 30px 30px 30px;  */
+    /* padding:  30px 30px 30px 30px;; */
+    border: 5px solid var(--yellow);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 210px;
+
+}
+
+#portfolio .port-row .port-item .port-img img{
+
+    width:90%;
+    border-radius: 7px;
+   
+    
+    /* Maybe change the size of the picture? or get rid of the border (in port-item) */
+
+}
+
+#portfolio .port-row .port-item .port-info{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    /* background-color: var(--pink); */
+    background-color:var(--tbackground);
+    padding:0 15px;
+     /* border-radius: 10px; */
+     text-align:center;
+     display:flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+     gap:10px;
+     /* transform:scale(0); */
+     
+     visibility:hidden;
+      transition: 0.2s;
+    
+     
+}
+
+#portfolio .port-row .port-item:hover .port-info{
+    /* transform:scale(1); */
+    visibility: visible; 
+     border: 5px solid var(--pink);
+    border-radius: 10px; 
+    /* transition:ease-out 0.3s; */
+    
+}
+
+#portfolio .port-row .port-item .port-info h4 {
+    color: var(--green);
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+#portfolio .port-row .port-item .port-info a{
+    text-decoration: none;
+    color:var(--green);
+  }
+
+  #portfolio .port-row .port-item .port-info a:hover{
+    
+    color: var(--pink);
+    transition:0.2s;
+    text-decoration: underline;
+}
+
+#portfolio .port-row .port-item .port-info h4 + p{
+
+    color: var(--white);
+    font-size: 14px;
+    
+}
+
+/* Movile tech */
+
+/* @media only screen and (max-width: 830px) {
+    #portfolio .port-row{
+        margin-top: 50px;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    #portfolio .port-row{
+        margin-top: 50px;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:5px;
+    }
+  
+   
+} */
+
+
+
+
+
+
+
+/* ======================= Portfolio End ================================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= Contact Start ================================================ */
+#contact {
+    padding: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    width:600px;
+    gap:20px;
+    /* margin-top: 50px; */
+    /* border: 5px solid var(--yellow); */
+    border-radius: 5px;
+    padding:30px 30px 30px 30px;
+}
+.contact-form input{
+    width:90%;
+    height: 40px ;
+    background-color: var(--headerBackground);
+    border: 3px solid var(--yellow);
+    border-radius: 5px;
+    padding:20px 20px 20px 20px;
+    color:var(--white);
+    font-family: var(--font2);
+    transition: 0.3s;
+}
+
+
+
+.contact-form textarea{
+    width:90%;
+    height: 250px;
+    
+    resize: none;
+    background-color: var(--headerBackground);
+    border: 3px solid var(--yellow);
+    border-radius: 5px;
+    padding:20px 20px 20px 20px;
+    color:var(--white);
+    font-family: var(--font2);
+    transition: 0.3s;
+}
+
+.contact-form input:hover,.contact-form textarea:hover{
+    border: 3px solid var(--pink);
+   
+}
+
+
+.contact-form input::placeholder,.contact-form textarea::placeholder {
+    color:var(--white);
+    font-family: var(--font2);
+    font-size: medium;
+}
+.contact-form button{
+    color:var(--white);
+    font-family: var(--font1);
+    font-size: medium;
+    width:60%;
+    height: 40px ;
+    background-color: var(--darkPink);
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-weight: 600;
+   
+    
+    
+}
+
+.contact-form button:hover{
+    background-color: var(--background);
+    border: 3px solid var(--pink);
+    border-radius: 3px;
+    color: var(--green);
+    font-weight: 600;
+}
+
+/* movile form */
+
+@media only screen and (max-width: 830px) {
+    #contact .contact-form{
+      width: 500px;
+    }
+
+    #contact .sub-para{
+        width: 400px;
+      }
+   
+
+}
+
+@media only screen and (max-width: 400px) {
+    #contact .contact-form{
+        width: 370px;
+      }
+
+      #contact .sub-para{
+        width: 290px;
+      }
+   
+}
+
+
+/* ======================= Contact End ================================================== */
+
+/* Footer for mobile version */
+
+.footer_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    gap: 20px;
+}
+
+.footer_main p {
+    color: var(--green);
+    font-size: x-small;
+}
+
+.social-icons_fm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons_fm i {
+    color: var(--white);
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+
+.footer_main img {
+    width: 230px;
+    transition: 0.4s
+}
+
+@media only screen and (max-width: 830px) {
+    .footer_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    
+        gap: 20px;
+    }
+
+    .footer_main img {
+        width: 190px;
+        transition: 0.4s
+    }
+
+    .divider{
+        height: 300px;
+    }
+   
+
+}
+
+@media only screen and (max-width: 400px) {
+    .footer_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        gap: 20px;
+    }
+
+    .footer_main img {
+        width: 190px;
+        transition: 0.4s
+    }
+   
+}
+
+
+/* ======================= MAIN END ===================================================== */
+
+
+
+/* ======================= ALL BODY CONTENT END ========================================= */ 

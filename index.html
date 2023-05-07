@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!--  https://smtpjs.com/ FOR SENDING THE EMAIL-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <title>mtm portfolio</title>
+</head>
+
+<body>
+
+    <!-- =========== Header START ======================================= -->
+    <header>
+
+        <a href="#"><img src="/assets/logos/mtm_logo.png" alt="mtm logo"></a>
+
+        <!-- NavBar start --><!-- nav>ul>li>a>i -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#aboutme"></i>Sobre mi</a></li>
+                <li><a href="#technologies">Habilidades</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- NavBar end -->
+
+        <!-- footer start-->
+        <div class="footer">
+            <div class="social-icons">
+                <a href="https://github.com/maria-mtm"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/maria-mtm/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p>&copy; Copyright 2023</p>
+        </div>
+        <!-- footer end-->
+
+    </header>
+    <i class="fa-solid fa-bars" id="menuBtn"></i>
+    <!-- <i class="fa-solid fa-xmark" id="menuBtn"></i> -->
+    <!-- =========== Header END ======================================= -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =========== ALL BODY CONTENT ===================================== -->
+    <main>
+        <!-- =========== Home START ======================================= -->
+        
+        <div id="home">
+            <div class="miniDivider"></div>
+            <div class="home-row">
+                <h1>Hola mundo, <br>
+                    soy María Meléndez<span>,</span></h1>
+                <p><span class="auto-input"> </span></p>
+            </div>
+        </div>
+        <!-- =========== Home END ========================================= -->
+        <!-- =========== About me START =================================== -->
+        <div class="divider1"></div>
+        <div id="aboutme">
+            <h1 class="sub-heading">
+                Sobre mi
+            </h1>
+            <div class="miniDivider"></div>
+            <!-- <p>I'm passionated about building beautiful, responsive and functional websites. <br><br>
+                I studied <a href="https://bellasartes.ugr.es/">Fine Arts</a> and I recently graduated from a <a
+                    href="https://www.codenotch.com/">coding bootcamp</a> where I learned the
+                fundamentals to become a full stack web developer. Since then, I've been working on various personal
+                projects to hone my skills and gain practical experience.<br><br>
+                I'm a self-starter who's always eager to learn and take on new challenges. I enjoy working
+                collaboratively with designers, developers, and other stakeholders to create user-friendly and visually
+                appealing web applications. I have experience with popular front-end frameworks like Angular, and I'm
+                always looking to expand my knowledge and stay up-to-date with the latest web technologies.<br><br>
+                Outside of coding, I love travelling. I've visited many countries and I've lived in Germany,
+                United States and Australia (apart from Spain). I also like drawing and I'm an avid reader and enjoy
+                learning about new topics in technology and design. I'm excited to continue growing as a developer and
+                contributing to innovative projects. -->
+            <p>Me apasiona construir sitios web bonitos, responsives y funcionales.<br><br>
+
+                Estudié <a href="https://bellasartes.ugr.es/">Bellas Artes</a> y recientemente he terminado mis estudios
+                en un <a href="https://www.codenotch.com/"> bootcamp de programación</a> donde he aprendido
+                las bases para convertirme en una desarrolladora web full stack. Desde entonces, he estado trabajando en
+                varios proyectos personales para perfeccionar mis habilidades y adquirir experiencia práctica.<br><br>
+
+                Soy una persona emprendedora que siempre está dispuesta a aprender y asumir nuevos retos. Me gusta
+                trabajar en colaboración con diseñadores, desarrolladores y otras partes interesadas para crear
+                aplicaciones web fáciles de usar y visualmente atractivas. Tengo experiencia con frameworks front-end
+                populares como Angular, y siempre estoy buscando ampliar mis conocimientos y mantenerme al día con las
+                últimas tecnologías web. <br><br>
+
+                Fuera de la programación, me encanta viajar. He visitado muchos países y he vivido en Alemania, Estados
+                Unidos y Australia (además de España). También me gusta dibujar y soy una gran lectora y disfruto
+                aprendiendo sobre nuevos temas de tecnología y diseño. Tengo mucha ilusión y ganas en seguir creciendo
+                como desarrollador y contribuir a proyectos innovadores.
+
+            </p>
+
+            <div class="miniDivider"></div>
+            <p>
+                Aquí puedes ver mi CV:
+            </p>
+            <br>
+            <!-- <button id="" type="submit">DOWNLOAD</button> -->
+            <!-- <button type="submit"><a download="mtm_cv" href="./pdf_testing.pdf">DOWNLOAD</a></button> -->
+            <a download="mtm_mariamelendez_cv" href="./cv_mariamelendez.pdf"><button type="submit">DESCARGAR</button></a>
+
+
+        </div>
+        <!-- =========== About me END ===================================== -->
+        <div class="divider"></div>
+        <!-- =========== Technologies START ================================== -->
+        <div id="technologies">
+            <h1 class="sub-heading">
+                Habilidades
+            </h1>
+            <br>
+            <p class="sub-para">Estos son algunos de los softwares, lenguajes y herramientas <br>que he aprendido y/o estoy
+                aprendiendo</p>
+            <!-- <div class="miniDivider"></div> -->
+            <div class="tech-group">
+                <h2 class="h2-heading-tech">Diseño</h2>
+                <!-- Here my design knowledge -->
+                <div class="tech-row">
+
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/design_icons/ai.svg" alt="Adobe Illustrator">
+                        </div>
+                        <div class="tech-info">
+                            <p>Adobe Illustrator</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/design_icons/ps.svg" alt="Adobe Photoshop">
+                        </div>
+                        <div class="tech-info">
+                            <p>Adobe Photoshop</p>
+                        </div>
+                    </div>
+
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/design_icons/figma.svg" alt="Figma">
+
+                        </div>
+                        <div class="tech-info">
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="h2-heading-tech">Front-end</h2>
+                <div class="tech-row">
+
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/front_icons/html.svg" alt="html">
+                        </div>
+                        <div class="tech-info">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/front_icons/css.svg" alt="css">
+                        </div>
+                        <div class="tech-info">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/front_icons/js.svg" alt="JavaScript">
+                        </div>
+                        <div class="tech-info">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/front_icons/angular.svg" alt="Angular">
+                        </div>
+                        <div class="tech-info">
+                            <p>Angular</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <h2 class="h2-heading-tech">Back-end</h2>
+                <div class="tech-row">
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/back-icons/node.svg" alt="nodeJs">
+                        </div>
+                        <div class="tech-info">
+                            <p>NodeJS</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/back-icons/mySql.png" alt="mySql">
+                        </div>
+                        <div class="tech-info">
+                            <p>MySql</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/back-icons/Mongodb.svg" alt="MongoDB">
+                        </div>
+                        <div class="tech-info">
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/back-icons/typescript.svg" alt="TypeScript">
+                        </div>
+                        <div class="tech-info">
+                            <p>TypeScript</p>
+                        </div>
+                    </div>
+
+                </div>
+                <h2 class="h2-heading-tech">Actualmente aprendiendo</h2>
+                <div class="tech-row">
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/learning_icons/react.svg" alt="React">
+
+                        </div>
+                        <div class="tech-info">
+                            <p>React</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-img">
+                            <img src="./assets/icons/learning_icons/php.svg" alt="php">
+
+                        </div>
+                        <div class="tech-info">
+                            <p>PHP</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- =========== Technologies END ==================================== -->
+        <div class="divider"></div>
+        <!-- =========== Portfolio START ==================================== -->
+
+        <div id="portfolio">
+            <h1 class="sub-heading">
+                Portfolio
+            </h1>
+            <div class="miniDivider"></div>
+            <p class="sub-para">Estos son algunos de mis proyectos y trabajos</p>
+
+            <div class="port-row">
+                <!-- item1 -->
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="./assets/imgs/Projects/proy_petfinder.png" alt="petFinder">
+                    </div>
+                    <div class="port-info">
+                        <h4><a href="https://pet-finder-livid.vercel.app/">PetFinder</a></h4>
+                        <p>App móvil para publicar y/o encontrar mascotas perdidas</p>
+                        <p>#HTML #CSS #Angular #Typescript #MySql</p>
+
+                    </div>
+                </div>
+                <!-- item2-->
+                <!-- <div class="port-item">
+                    <div class="port-img">
+                        <img src="./assets/imgs/Projects/proy_example.png" alt="AppExample">
+                    </div>
+                    <div class="port-info">
+                        <h4><a href="#">App Example</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, adipisci!</p>
+                        <p>#HTML #CSS #JavaScript</p>
+                    </div>
+                </div>
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="./assets/imgs/Projects/proy_example.png" alt="AppExample">
+                    </div>
+                    <div class="port-info">
+                        <h4><a href="#">App Example</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, adipisci!</p>
+                        <p>#HTML #CSS #JavaScript</p>
+                    </div>
+                </div>
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="./assets/imgs/Projects/proy_example.png" alt="AppExample">
+                    </div>
+                    <div class="port-info">
+                        <h4><a href="#">App Example</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, adipisci!</p>
+                        <p>#HTML #CSS #JavaScript</p>
+                    </div>
+                </div> -->
+
+
+
+
+            </div>
+        </div>
+
+        <!-- =========== Portfolio END ==================================== -->
+        <div class="divider"></div>
+        <!-- =========== Contact START ==================================== -->
+        <div id="contact">
+            <h1 class="sub-heading">
+                Contacto
+            </h1>
+            <div class="miniDivider"></div>
+            <p class="sub-para">Gracias por visitar mi página web. <br> No dude en ponerse en contacto conmigo a través del
+                siguiente formulario. <br> ¡Me pondré en contacto con usted a la mayor brevedad posible!</p>
+            <!-- <form id="contact-form" onsubmit="sendEmail(); reset(); return false;"> -->
+            <div class="miniDivider"></div>
+            <form class="contact-form">
+
+                <input type="text" id="name" placeholder="Nombre/Empresa" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Teléfono" required>
+                <textarea id="message" rows="10" placeholder="Deje aquí su mensaje"></textarea>
+                <!-- <button id="submitB" type="reset" onclick="sendEmail()">Send</button> -->
+                <button id="submitB" type="submit">ENVIAR</button>
+            </form>
+        </div>
+        <!-- =========== Contact END ==================================== -->
+
+        <div class="divider1"></div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer_main">
+            <a href="#"><img src="/assets/logos/mtm_logo.png" alt="mtm logo"></a>
+
+            <div class="social-icons_fm">
+                <a href="https://github.com/maria-mtm"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/maria-mtm/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p>&copy; Copyright 2023</p>
+            <div class="divider"></div>
+        </div>
+      
+
+
+    </main>
+
+   
+
+
+
+
+
+
+
+    <!-- Typed.js file (for typing effects) -->
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <!-- Main Js File -->
+    <script src="script.js"></script>
+    <!-- Fontawesome JS File (Icon File) -->
+    <script src="https://kit.fontawesome.com/64b1393f32.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
