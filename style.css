@@ -959,15 +959,19 @@ main {
     transition: 0.4s
 }
 
-.divider{
+ #contact .divider{
     display: none;
 }
 
-.divider1{
-    display:none
-}
+#contact  .divider1{
+    height: 10px;
+} 
 
-@media only screen and (max-width: 830px) {
+#contact  .dividerfinal{
+    height: 10px;
+} 
+
+@media only screen and (max-width: 900px) {
     .footer_main{
         display: flex;
         flex-direction: column;
@@ -984,8 +988,14 @@ main {
     }
 
     .divider{
-        height: 300px;
+        display:block ;
+        height: 450px;
     }
+
+    #contact  .dividerfinal{
+        display:block;
+        height: 500px;
+    } 
    
 
 }
@@ -1004,6 +1014,16 @@ main {
         width: 190px;
         transition: 0.4s
     }
+
+    .divider{
+        display:block ;
+        height: 200px;
+    }
+
+    #contact  .dividerfinal{
+        display:block;
+        height: 100px;
+    } 
    
 }
 
