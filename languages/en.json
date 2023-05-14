@@ -16,13 +16,14 @@
     },
         "techsect":{
         "h1":"Skills",
-        "p":"These are some of the softwares, languages and tools <br>that I am specialized",
+        "p":"These are some of the softwares, languages and tools <br>that I am specialized with",
         "design":"Design",
         "currently": "Currently learning"
     },
     "portfoliosect":{
         "p":"These are some of my projects and works",
-        "petFinder-p":"Mobile App to find and/or post lost pets"
+        "petFinder-p":"Mobile App to find and/or post lost pets",
+        "titithecat-p":"I have created a website for my cat, where I practice the basics of HTML, CSS and JS."
     },
     "contactsect":{
         "h1":"Contact",

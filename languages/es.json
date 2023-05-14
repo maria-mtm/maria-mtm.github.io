@@ -22,7 +22,8 @@
     },
     "portfoliosect":{
         "p":"Estos son algunos de mis proyectos y trabajos",
-        "petFinder-p":"App móvil para publicar y/o encontrar mascotas perdidas"
+        "petFinder-p":"App móvil para publicar y/o encontrar mascotas perdidas",
+        "titithecat-p":"He creado una pagina web para mi gata, donde practico las bases de HTML, CSS y JS."
     }, 
     "contactsect":{
         "h1":"Contacto",

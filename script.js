@@ -48,7 +48,7 @@ submit.addEventListener('submit', (e) => {
         Subject: "👋👋 Hello! New Enquiry From mtm Website 👀",
         Body: emailmessage
     }).then(
-        message => alert(message)
+        alert("Thank you!")
     );
 })
 
