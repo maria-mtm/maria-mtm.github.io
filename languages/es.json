@@ -1,0 +1,33 @@
+{
+    "menu": {
+        "aboutme": "Sobre mi",
+        "technologies": "Habilidades",
+        "portfolio": "Portfolio",
+        "contact": "Contacto"
+    },
+    "home": {
+        "h1": "Hola mundo,<br>soy María Meléndez"
+    },
+    "aboutmesect": {
+        "h1": "About me",
+        "p1": "Me apasiona construir sitios web bonitos, responsives y funcionales.<br><br>Estudié Bellas Artes y recientemente he terminado mis estudios en un bootcamp de programación donde he aprendido las bases para convertirme en una desarrolladora web full stack. Desde entonces, he estado trabajando en varios proyectos personales para perfeccionar mis habilidades y adquirir experiencia práctica.<br><br>Soy una persona emprendedora que siempre está dispuesta a aprender y asumir nuevos retos. Me gusta trabajar en colaboración con diseñadores, desarrolladores y otras partes interesadas para crear aplicaciones web fáciles de usar y visualmente atractivas. Tengo experiencia con frameworks front-end populares como Angular, y siempre estoy buscando ampliar mis conocimientos y mantenerme al día con las últimas tecnologías web.<br><br>Fuera de la programación, me encanta viajar. He visitado muchos países y he vivido en Alemania, Estados Unidos y Australia (además de España). También me gusta dibujar y soy una gran lectora y disfruto aprendiendo sobre nuevos temas de tecnología y diseño. Tengo mucha ilusión y ganas en seguir creciendo como desarrollador y contribuir a proyectos innovadores.",
+        "p2":"Aquí puedes ver mi CV:",
+        "downbtn": "DESCARGAR" 
+    },
+    "techsect":{
+        "h1":"Habilidades",
+        "p":"Estos son algunos de los softwares, lenguajes y herramientas <br>en los que estoy especializada",
+        "design":"Diseño",
+        "currently": "Actualmente aprendiendo"
+    },
+    "portfoliosect":{
+        "p":"Estos son algunos de mis proyectos y trabajos",
+        "petFinder-p":"App móvil para publicar y/o encontrar mascotas perdidas"
+    }, 
+    "contactsect":{
+        "h1":"Contacto",
+        "p":"Gracias por visitar mi página web.<br>No dude en ponerse en contacto conmigo a través del siguiente formulario.<br>¡Me pondré en contacto con usted a la mayor brevedad posible!",
+        "sendbtn": "ENVIAR" 
+    }
+}
+ 

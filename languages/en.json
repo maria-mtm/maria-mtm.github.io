@@ -1,0 +1,32 @@
+{
+    "menu": {
+        "aboutme": "About me",
+        "technologies": "Skills",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "home": {
+        "h1": "Hello world, <br> this is<br> Maria Melendez"
+    },
+    "aboutmesect": {
+        "h1": "About me",
+        "p1": "I'm passionated about building beautiful, responsive and functional websites.<br><br>I studied Fine Arts and I recently graduated from a coding bootcamp where I learned the fundamentals to become a full stack web developer. Since then, I've been working on various personal projects to hone my skills and gain practical experience.<br><br>I'm a self-starter who's always eager to learn and take on new challenges. I enjoy working collaboratively with designers, developers, and other stakeholders to create user-friendly and visually appealing web applications. I have experience with popular front-end frameworks like Angular, and I'm always looking to expand my knowledge and stay up-to-date with the latest web technologies.<br><br>Outside of coding, I love travelling. I've visited many countries and I've lived in Germany, United States and Australia (apart from Spain). I also like drawing and I'm an avid reader and enjoy learning about new topics in technology and design. I'm excited to continue growing as a developer and contributing to innovative projects.",
+        "p2":"Please, have a look at my CV:",
+        "downbtn": "DOWNLOAD"
+    },
+        "techsect":{
+        "h1":"Skills",
+        "p":"These are some of the softwares, languages and tools <br>that I am specialized",
+        "design":"Design",
+        "currently": "Currently learning"
+    },
+    "portfoliosect":{
+        "p":"These are some of my projects and works",
+        "petFinder-p":"Mobile App to find and/or post lost pets"
+    },
+    "contactsect":{
+        "h1":"Contact",
+        "p":"Thank you for visiting my website.<br>Please, do not hesitate to contact me through this form.<br>I will get back to you shortly!",
+        "sendbtn": "SEND" 
+    }
+}

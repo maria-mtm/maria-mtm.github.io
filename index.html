@@ -26,15 +26,15 @@
     <!-- =========== Header START ======================================= -->
     <header>
 
-        <a href="#"><img src="/assets/logos/mtm_logo.png" alt="mtm logo"></a>
+        <a href="#"><img src="./assets/logos/mtm_logo.png" alt="mtm logo"></a>
 
         <!-- NavBar start --><!-- nav>ul>li>a>i -->
         <nav class="menu">
             <ul>
-                <li><a href="#aboutme"></i>Sobre mi</a></li>
-                <li><a href="#technologies">Habilidades</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#aboutme" data-section="menu" data-value="aboutme">Sobre mi</a></li>
+                <li><a href="#technologies" data-section="menu" data-value="technologies">Habilidades</a></li>
+                <li><a href="#portfolio" data-section="menu" data-value="portfolio">Portfolio</a></li>
+                <li><a href="#contact" data-section="menu" data-value="contact">Contacto</a></li>
             </ul>
         </nav>
         <!-- NavBar end -->
@@ -45,7 +45,17 @@
                 <a href="https://github.com/maria-mtm"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/maria-mtm/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
+
             <p>&copy; Copyright 2023</p>
+
+            <div id="flags" class="flags">
+                <div class="flags-item" data-language="es">
+                    <img src="./assets/icons/languages_icons/es.png" alt="es">
+                </div>
+                <div class="flags-item" data-language="en">
+                    <img src="./assets/icons/languages_icons/en.png" alt="en">
+                </div>
+            </div>
         </div>
         <!-- footer end-->
 
@@ -67,11 +77,11 @@
     <!-- =========== ALL BODY CONTENT ===================================== -->
     <main>
         <!-- =========== Home START ======================================= -->
-        
+
         <div id="home">
             <div class="miniDivider"></div>
             <div class="home-row">
-                <h1>Hola mundo, <br>
+                <h1 data-section="home" data-value="h1">Hola mundo, <br>
                     soy María Meléndez<span>,</span></h1>
                 <p><span class="auto-input"> </span></p>
             </div>
@@ -80,13 +90,12 @@
         <!-- =========== About me START =================================== -->
         <div class="divider1"></div>
         <div id="aboutme">
-            <h1 class="sub-heading">
+            <h1 class="sub-heading" data-section="aboutmesect" data-value="h1">
                 Sobre mi
             </h1>
             <div class="miniDivider"></div>
             <!-- <p>I'm passionated about building beautiful, responsive and functional websites. <br><br>
-                I studied <a href="https://bellasartes.ugr.es/">Fine Arts</a> and I recently graduated from a <a
-                    href="https://www.codenotch.com/">coding bootcamp</a> where I learned the
+                I studied Fine Arts and I recently graduated from a coding bootcamp where I learned the
                 fundamentals to become a full stack web developer. Since then, I've been working on various personal
                 projects to hone my skills and gain practical experience.<br><br>
                 I'm a self-starter who's always eager to learn and take on new challenges. I enjoy working
@@ -96,11 +105,11 @@
                 Outside of coding, I love travelling. I've visited many countries and I've lived in Germany,
                 United States and Australia (apart from Spain). I also like drawing and I'm an avid reader and enjoy
                 learning about new topics in technology and design. I'm excited to continue growing as a developer and
-                contributing to innovative projects. -->
-            <p>Me apasiona construir sitios web bonitos, responsives y funcionales.<br><br>
+                contributing to innovative projects.</p> -->
+            <p data-section="aboutmesect" data-value="p1" >Me apasiona construir sitios web bonitos, responsives y funcionales.<br><br>
 
-                Estudié <a href="https://bellasartes.ugr.es/">Bellas Artes</a> y recientemente he terminado mis estudios
-                en un <a href="https://www.codenotch.com/"> bootcamp de programación</a> donde he aprendido
+                Estudié Bellas Artes y recientemente he terminado mis estudios
+                en un bootcamp de programación donde he aprendido
                 las bases para convertirme en una desarrolladora web full stack. Desde entonces, he estado trabajando en
                 varios proyectos personales para perfeccionar mis habilidades y adquirir experiencia práctica.<br><br>
 
@@ -118,13 +127,14 @@
             </p>
 
             <div class="miniDivider"></div>
-            <p>
+            <p data-section="aboutmesect" data-value="p2" >
                 Aquí puedes ver mi CV:
             </p>
             <br>
             <!-- <button id="" type="submit">DOWNLOAD</button> -->
             <!-- <button type="submit"><a download="mtm_cv" href="./pdf_testing.pdf">DOWNLOAD</a></button> -->
-            <a download="mtm_mariamelendez_cv" href="./cv_mariamelendez.pdf"><button type="submit">DESCARGAR</button></a>
+            <a download="mtm_mariamelendez_cv" href="./assets/cvs/cv_mariamelendez_es.pdf"><button
+                    type="submit" data-section="aboutmesect" data-value="downbtn" >DESCARGAR</button></a>
 
 
         </div>
@@ -132,15 +142,16 @@
         <div class="divider"></div>
         <!-- =========== Technologies START ================================== -->
         <div id="technologies">
-            <h1 class="sub-heading">
+            <h1 class="sub-heading" data-section="techsect" data-value="h1">
                 Habilidades
             </h1>
             <br>
-            <p class="sub-para">Estos son algunos de los softwares, lenguajes y herramientas <br>que he aprendido y/o estoy
+            <p class="sub-para" data-section="techsect" data-value="p">Estos son algunos de los softwares, lenguajes y herramientas <br>que he aprendido y/o
+                estoy
                 aprendiendo</p>
             <!-- <div class="miniDivider"></div> -->
             <div class="tech-group">
-                <h2 class="h2-heading-tech">Diseño</h2>
+                <h2 class="h2-heading-tech" data-section="techsect" data-value="design">Diseño</h2>
                 <!-- Here my design knowledge -->
                 <div class="tech-row">
 
@@ -246,7 +257,7 @@
                     </div>
 
                 </div>
-                <h2 class="h2-heading-tech">Actualmente aprendiendo</h2>
+                <h2 class="h2-heading-tech" data-section="techsect" data-value="currently">Actualmente aprendiendo</h2>
                 <div class="tech-row">
                     <div class="tech-item">
                         <div class="tech-img">
@@ -280,7 +291,7 @@
                 Portfolio
             </h1>
             <div class="miniDivider"></div>
-            <p class="sub-para">Estos son algunos de mis proyectos y trabajos</p>
+            <p class="sub-para" data-section="portfoliosect" data-value="p">Estos son algunos de mis proyectos y trabajos</p>
 
             <div class="port-row">
                 <!-- item1 -->
@@ -290,7 +301,7 @@
                     </div>
                     <div class="port-info">
                         <h4><a href="https://pet-finder-livid.vercel.app/">PetFinder</a></h4>
-                        <p>App móvil para publicar y/o encontrar mascotas perdidas</p>
+                        <p data-section="portfoliosect" data-value="petFinder-p">App móvil para publicar y/o encontrar mascotas perdidas</p>
                         <p>#HTML #CSS #Angular #Typescript #MySql</p>
 
                     </div>
@@ -337,22 +348,23 @@
         <div class="divider"></div>
         <!-- =========== Contact START ==================================== -->
         <div id="contact">
-            <h1 class="sub-heading">
+            <h1 class="sub-heading" data-section="contactsect" data-value="h1">
                 Contacto
             </h1>
             <div class="miniDivider"></div>
-            <p class="sub-para">Gracias por visitar mi página web. <br> No dude en ponerse en contacto conmigo a través del
+            <p class="sub-para" data-section="contactsect" data-value="p">Gracias por visitar mi página web. <br> No dude en ponerse en contacto conmigo a través
+                del
                 siguiente formulario. <br> ¡Me pondré en contacto con usted a la mayor brevedad posible!</p>
             <!-- <form id="contact-form" onsubmit="sendEmail(); reset(); return false;"> -->
             <div class="miniDivider"></div>
             <form class="contact-form">
 
-                <input type="text" id="name" placeholder="Nombre/Empresa" required>
+                <input type="text" id="name" placeholder="Name/Nombre" required>
                 <input type="email" id="email" placeholder="Email" required>
-                <input type="text" id="phone" placeholder="Teléfono" required>
-                <textarea id="message" rows="10" placeholder="Deje aquí su mensaje"></textarea>
+                <input type="text" id="phone" placeholder="Phone/Teléfono" required>
+                <textarea id="message" rows="10" placeholder="Message/Mensaje"></textarea>
                 <!-- <button id="submitB" type="reset" onclick="sendEmail()">Send</button> -->
-                <button id="submitB" type="submit">ENVIAR</button>
+                <button id="submitB" type="submit" data-section="contactsect" data-value="sendbtn">ENVIAR</button>
             </form>
         </div>
         <!-- =========== Contact END ==================================== -->
@@ -371,12 +383,12 @@
             <div class="divider"></div>
             <div class="dividerfinal"></div>
         </div>
-      
+
 
 
     </main>
 
-   
+
 
 
 
