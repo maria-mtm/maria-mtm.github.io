@@ -31,10 +31,10 @@
         <!-- NavBar start --><!-- nav>ul>li>a>i -->
         <nav class="menu">
             <ul>
-                <li><a href="#aboutme"></i>Sobre mi</a></li>
-                <li><a href="#technologies">Habilidades</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#aboutme" data-section="menu" data-value="aboutme" >Sobre mi</a></li>
+                <li><a href="#technologies" data-section="menu" data-value="technologies" >Habilidades</a></li>
+                <li><a href="#portfolio" data-section="menu" data-value="portfolio" >Portfolio</a></li>
+                <li><a href="#contact" data-section="menu" data-value="contact" >Contacto</a></li>
             </ul>
         </nav>
         <!-- NavBar end -->
@@ -45,10 +45,16 @@
                 <a href="https://github.com/maria-mtm"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/maria-mtm/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
+
             <p>&copy; Copyright 2023</p>
-            <div class="languages-icons">
-                <a href="#"><img src="./assets/icons/languages_icons/es.png" alt="spanish"></a>
-                <a href="#"><img src="./assets/icons/languages_icons/en.png" alt="english"></a>
+
+            <div id="flags" class="flags">
+                <div class="flags-item" data-language="es">
+                    <img src="./assets/icons/languages_icons/es.png" alt="es">
+                </div>
+                <div class="flags-item" data-language="en">
+                    <img src="./assets/icons/languages_icons/en.png" alt="en">
+                </div>
             </div>
         </div>
         <!-- footer end-->
@@ -75,7 +81,7 @@
         <div id="home">
             <div class="miniDivider"></div>
             <div class="home-row">
-                <h1>Hola mundo, <br>
+                <h1 data-section="home" data-value="h1">Hola mundo, <br>
                     soy María Meléndez<span>,</span></h1>
                 <p><span class="auto-input"> </span></p>
             </div>

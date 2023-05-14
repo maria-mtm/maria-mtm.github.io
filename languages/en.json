@@ -1,0 +1,14 @@
+{
+    
+        "menu":{
+            "aboutme": "About me",
+            "technologies": "Skills",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+    
+        },
+        "home":{
+            "h1": "Hello world, this is Maria Melendez"
+        }
+    
+}
