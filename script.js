@@ -10,7 +10,7 @@
 
 // TYPING EFFECT
 let typed = new Typed('.auto-input', {
-    strings: ['',' Desarrolladora Web Front-end ', 'Artista ', ' Diseñadora Gráfica', ' Diseñadora UX/UI '],
+    strings: ['','Front-end Web Developer ', ' Graphic Designer', ' UX/UI Designer '],
     typeSpeed: 120,
     backSpeed: 110,
     backdelay: 2000,
