@@ -154,6 +154,7 @@ header img {
    border: 1px solid var(--darkYellow);
    border-radius: 100%;
    transition: 0.5s;
+   display:block;
 }
 
 
