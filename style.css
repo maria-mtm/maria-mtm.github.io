@@ -790,10 +790,10 @@ main {
     font-size: 14px;
 
 }
+/* 
+Movile tech  */
 
-/* Movile tech */
-
-/* @media only screen and (max-width: 830px) {
+@media only screen and (max-width: 830px) {
     #portfolio .port-row{
         margin-top: 50px;
         display:grid;
@@ -813,7 +813,7 @@ main {
     }
   
    
-} */
+}
 
 
 
