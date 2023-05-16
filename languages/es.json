@@ -2,7 +2,7 @@
     "menu": {
         "aboutme": "Sobre mi",
         "technologies": "Habilidades",
-        "portfolio": "Portfolio",
+        "portfolio": "Proyectos",
         "contact": "Contacto"
     },
     "home": {
@@ -21,9 +21,11 @@
         "currently": "Actualmente aprendiendo"
     },
     "portfoliosect":{
+        "h1":"Proyectos",
         "p":"Estos son algunos de mis proyectos y trabajos",
         "petFinder-p":"App móvil para publicar y/o encontrar mascotas perdidas",
-        "titithecat-p":"He creado una pagina web para mi gata, donde practico las bases de HTML, CSS y JS."
+        "titithecat-p":"He creado una pagina web para mi gata, donde practico las bases de HTML, CSS y JS.",
+        "mtm-p":"Este es el repositorio de esta página web"
     }, 
     "contactsect":{
         "h1":"Contacto",
